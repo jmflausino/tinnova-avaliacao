@@ -1,0 +1,14 @@
+package com.tinnova.veiculos.api.controllers.model.input;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class VeiculoInput {
+	
+	private String veiculo;
+	private String marca;
+	private Integer ano;
+	private String descricao;
+}

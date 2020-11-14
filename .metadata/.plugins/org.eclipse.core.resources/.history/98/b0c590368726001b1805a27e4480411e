@@ -1,0 +1,14 @@
+package exercicio1.calculadora;
+
+public abstract class CalculadoraEstatisticas {
+	
+	private int total;
+	private int votos;
+	
+	double calcularPercentual() {
+		return votos / total;
+	};
+	
+	abstract String print();
+	
+}

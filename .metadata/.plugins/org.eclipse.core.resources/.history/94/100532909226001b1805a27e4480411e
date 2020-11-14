@@ -1,0 +1,5 @@
+package com.tinnova.veiculos.domain.service;
+
+public interface CadastroVeiculoService {
+
+}

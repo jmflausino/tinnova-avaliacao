@@ -1,0 +1,32 @@
+package com.tinnova.veiculos.api.controllers.swagger;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.tinnova.veiculos.api.controllers.model.input.VeiculoInput;
+import com.tinnova.veiculos.api.controllers.model.output.VeiculoOutput;
+
+import io.swagger.annotations.Api;
+
+@Api(tags = "Veiculos")
+public interface VeiculosSwagger {
+
+	VeiculoOutput buscar(Long veiculoId);
+
+	List<VeiculoOutput> pesquisar();
+
+	List<VeiculoOutput> listar();
+
+	VeiculoOutput adicionar(VeiculoInput input);
+
+	VeiculoOutput atualizar(Long veiculoId, VeiculoInput input);
+
+	VeiculoOutput atualizarParcial(Long veiculoId);
+
+	VeiculoOutput atualizarParcial(Long veiculoId, Map<String, Object> campos, HttpServletRequest servletRequest);
+
+	void excluir(Long veiculoId);
+
+}

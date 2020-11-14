@@ -1,0 +1,10 @@
+package com.tinnova.veiculos.domain.service;
+
+import java.util.List;
+
+import com.tinnova.veiculos.domain.model.Veiculo;
+
+public class CadastroVeiculoService {
+	
+	List<Veiculo> 
+}

@@ -1,0 +1,26 @@
+package exercicio2;
+
+public class BubleSort {
+
+	public int[] bubbleSort(int... arr) {
+		int i, j, temp;
+		boolean trocou;
+		
+		for (i = 0; i < arr.length - 1; i++) {
+			trocou = false;
+			for (j = 0; j < arr.length - i - 1; j++) {
+				if (arr[j] > arr[j + 1]) {
+					temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+					trocou = true;
+				}
+			}
+
+			if (trocou == false)
+				break;
+		}
+		
+		return arr;
+	}
+}

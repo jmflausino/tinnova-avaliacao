@@ -1,0 +1,29 @@
+package exercicio2;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class BubleSort {
+
+	public List<int[]> ordenar(int... numeros) {
+		int i, j, temp;
+		boolean trocou;
+		
+		for (i = 0; i < numeros.length - 1; i++) {
+			trocou = false;
+			for (j = 0; j < numeros.length - i - 1; j++) {
+				if (numeros[j] > numeros[j + 1]) {
+					temp = numeros[j];
+					numeros[j] = numeros[j + 1];
+					numeros[j + 1] = temp;
+					trocou = true;
+				}
+			}
+
+			if (trocou == false)
+				break;
+		}
+		
+		return Arrays.asList(numeros);
+	}
+}

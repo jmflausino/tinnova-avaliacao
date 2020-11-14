@@ -1,0 +1,29 @@
+package com.tinnova.veiculos.api.controllers.model.assembler;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
+
+import com.tinnova.veiculos.api.controllers.model.output.VeiculoOutput;
+import com.tinnova.veiculos.domain.model.Veiculo;
+
+import lombok.RequiredArgsConstructor;
+
+@Component
+@RequiredArgsConstructor
+public class VeiculosOuputAssembler {
+	 
+	private final ModelMapper mapper;
+	
+	public VeiculoOutput toOutput(Veiculo veiculo) {		
+		return  this.mapper.map(veiculo, VeiculoOutput.class);
+	}
+	
+	public List<VeiculoOutput> toCollectionOuputy(Collection<Veiculo> veiculos) {
+		return veiculos.stream().map(o -> this.toOutput(o)).collect(Collectors.toList());
+	}
+			
+}

@@ -1,0 +1,5 @@
+package com.tinnova.veiculos.domain.exception;
+
+public class VeiculoNaoEncontadoException {
+
+}

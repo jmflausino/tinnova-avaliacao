@@ -1,0 +1,16 @@
+package exercicio3;
+
+import java.util.stream.IntStream;
+
+public class CalculadoraFatorial {
+	
+	private int numero;
+
+	public CalculadoraFatorial(int numero) {
+		this.numero = numero;
+	}
+	
+	public int fatorial() {
+		return IntStream.rangeClosed(2, this.numero).reduce(1, (x, y) -> x * y);
+	}
+}

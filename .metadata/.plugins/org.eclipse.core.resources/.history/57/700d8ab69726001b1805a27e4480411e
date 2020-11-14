@@ -1,0 +1,5 @@
+package com.tinnova.veiculos.api.controllers.model.input;
+
+public class VeiculoInput {
+
+}

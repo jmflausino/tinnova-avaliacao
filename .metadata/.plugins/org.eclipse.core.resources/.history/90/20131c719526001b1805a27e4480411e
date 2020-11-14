@@ -1,0 +1,24 @@
+package com.tinnova.veiculos.api.controllers.model.assembler;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.algaworks.algafood.api.v1.model.input.CozinhaInput;
+import com.algaworks.algafood.domain.model.Cozinha;
+
+@Component
+public class VeiculoInputDisassembler {
+
+	@Autowired
+	private ModelMapper mapper;
+	
+	public Cozinha toDomainObject(CozinhaInput input) {
+		return mapper.map(input, Cozinha.class);
+	}
+	
+	public void copyToDomainObject(CozinhaInput input, Cozinha cozinha) {
+		mapper.map(input, cozinha);
+	}
+
+}

@@ -1,0 +1,24 @@
+package exercicio1;
+
+import  java.lang.System;
+import exercicio1.calculadora.CalculadoraEmBranco;
+import exercicio1.calculadora.CalculadoraEstatisticas;
+import exercicio1.calculadora.CalculadoraNulos;
+import exercicio1.calculadora.CalculadoraValidos;
+
+public class TesteEleicao {
+	
+	private int totalVotos = 1000;
+	private int votosValidos = 800;
+	private int votosEmBranco = 150;
+	private int votosNulos = 50;
+	
+	CalculadoraEstatisticas calculadoraValidos = new CalculadoraValidos();
+	CalculadoraEstatisticas calculadoraEmBranco = new CalculadoraEmBranco();
+	CalculadoraEstatisticas calculadoraNulos = new CalculadoraNulos();
+
+	System.out.println("O Percentual de votos válidos é: " + calculadoraValidos.calculaPercentual(totalVotos, votosValidos));
+	System.out.println("O Percentual de votos em branco é: " + calculadoraEmBranco.calculaPercentual(totalVotos, votosValidos));
+	System.out.println("O Percentual de votos nulos é: " + calculadoraNulos.calculaPercentual(totalVotos, votosValidos));
+	
+}

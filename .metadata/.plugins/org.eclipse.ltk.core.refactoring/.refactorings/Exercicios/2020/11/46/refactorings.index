@@ -1,0 +1,8 @@
+1605363367171	Move compilation unit
+1605363402568	Copy compilation unit
+1605363769123	Delete element
+1605365698551	Rename type 'Fatorial'
+1605368082258	Rename method 'bubbleSort'
+1605368113094	Extract local variable 'ordenar'
+1605368170678	Rename local variable 'arr'
+1605368181815	Infer generic type arguments

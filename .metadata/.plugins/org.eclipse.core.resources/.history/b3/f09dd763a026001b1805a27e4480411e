@@ -1,0 +1,23 @@
+package com.tinnova.veiculos.api.controllers.model.input;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class VeiculoInput {
+	
+	@NotBlank
+	private String veiculo;
+	
+	@NotBlank
+	private String marca;
+	
+	@NotNull
+	private Integer ano;
+	
+	private String descricao;
+}

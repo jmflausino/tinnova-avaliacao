@@ -1,0 +1,11 @@
+NotBlank={0} é obrigatório.
+NotBull={0} é obrigatório.
+
+CPF= Um CPF válido é obrigatório
+
+fisioterapeutaInput.id=Fisioterapeuta 
+fisioterapeutaInput.nome=Nome do Fisioterapeuta
+fisioterapeutaInput.crefito=Registro do Fisioterapeuta (CREFITO)
+
+pacienteInput.id=Paciente
+pacienteInput.nome=Nome do Paciente

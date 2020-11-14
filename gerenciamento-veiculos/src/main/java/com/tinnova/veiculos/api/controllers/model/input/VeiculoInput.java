@@ -1,0 +1,31 @@
+package com.tinnova.veiculos.api.controllers.model.input;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import com.tinnova.veiculos.core.validation.MontadorasPermitidas;
+
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class VeiculoInput {
+	
+	@ApiModelProperty("Nome do veículo")
+	@NotBlank
+	private String veiculo;
+	
+	@ApiModelProperty("Marca do veículo")
+	@NotBlank
+	@MontadorasPermitidas(allowed = {"FIAT", "FORD", "HONDA", "HYUNDAI"})
+	private String marca;
+	
+	@ApiModelProperty("Ano do veículo")
+	@NotNull
+	private Integer ano;
+	
+	@ApiModelProperty("Descrição do veículo")
+	private String descricao;
+}

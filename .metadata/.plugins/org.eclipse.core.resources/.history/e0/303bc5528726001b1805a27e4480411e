@@ -1,0 +1,15 @@
+package exercicio1.calculadora;
+
+public class CalculadoraEmBranco extends CalculadoraEstatisticas {
+	
+
+	public CalculadoraEmBranco(int totalEleitores, int votos) {
+		super(totalEleitores, votos);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	String print() {
+		return String.format("O Percentual de votos em branco é %d", this.calcularPercentual());
+	}
+}

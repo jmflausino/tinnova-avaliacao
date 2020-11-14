@@ -1,0 +1,9 @@
+package exercicio1.calculadora;
+
+public interface CalculadoraEstatisticas {
+	
+	default double calculaPercentual(int total, int votos) {
+		return votos / total;
+	}
+	
+}

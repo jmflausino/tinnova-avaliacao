@@ -1,0 +1,10 @@
+package exercicio1.calculadora;
+
+public class CalculadoraValidos implements CalculadoraEstatisticas {
+	
+	@Override
+	public double calculaPercentual(int total, int votos) {
+		return votos / total;
+	}
+
+}

@@ -1,0 +1,14 @@
+package exercicio1.calculadora;
+
+public class CalculadoraNulos extends CalculadoraEstatisticas {
+
+	public CalculadoraNulos(int totalEleitores, int votos) {
+		super(totalEleitores, votos);
+	}
+
+	@Override
+	String print() {
+		return String.format("O Percentual de votos nulos é %d", this.calcularPercentual());
+	}
+
+}

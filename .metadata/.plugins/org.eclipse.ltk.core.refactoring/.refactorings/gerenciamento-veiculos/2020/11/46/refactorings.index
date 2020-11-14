@@ -1,0 +1,16 @@
+1605369249930	Rename package 'com.tinnova.veiculos.domain.model.service'
+1605370206837	Delete element
+1605370820416	Rename type 'CozinhaModelAssembler'
+1605370830156	Rename type 'CozinhaInputDisassembler'
+1605370880294	Rename local variable 'cozinha'
+1605371024005	Rename local variable 'inputObject'
+1605371030045	Rename local variable 'inputObject'
+1605371034592	Rename local variable 'domainObject'
+1605371485207	Rename method 'toCollectionOuputy'
+1605371887670	Delete element
+1605371891037	Delete element
+1605374256191	Rename local variable 'restauranteDestino'
+1605374763856	Extract interface 'VeiculosSwagger'
+1605374781713	Move compilation unit
+1605375779663	Rename type 'FileContentType'
+1605375791074	Rename type 'FileContentTypeValidator'

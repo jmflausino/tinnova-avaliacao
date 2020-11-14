@@ -1,0 +1,6 @@
+NotBlank={0} é obrigatório.
+NotNull={0} é obrigatório.
+
+NotBlank.veiculoInput.veiculo=Veículo
+NotBlank.veiculoInput.marca=Marca do Veículo
+NotNull.veiculoInput.ano=Ano do Veículo
