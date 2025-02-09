@@ -96,13 +96,13 @@ public class VeiculosController implements VeiculosSwagger {
 			objectMapper.configure(DeserializationFeature.FAIL_ON_IGNORED_PROPERTIES, true);
 			objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
 
-			Veiculo restauranteOrigem = objectMapper.convertValue(dadosOrigem, Veiculo.class);
+			Veiculo veiculoOrigem = objectMapper.convertValue(dadosOrigem, Veiculo.class);
 
 			dadosOrigem.forEach((nomePropriedade, valorPropriedade) -> {
 				Field field = ReflectionUtils.findField(Veiculo.class, nomePropriedade);
 				field.setAccessible(true);
 
-				Object novoValor = ReflectionUtils.getField(field, restauranteOrigem);
+				Object novoValor = ReflectionUtils.getField(field, veiculoOrigem);
 				ReflectionUtils.setField(field, veiculoDestino, novoValor);
 			});
 		} catch (IllegalArgumentException e) {
